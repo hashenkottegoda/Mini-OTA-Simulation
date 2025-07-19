@@ -1,0 +1,10 @@
+*.o
+*.exe
+*.out
+
+.DS_Store
+.vscode/
+
+# Received firmware folder
+ecu_device/received/
+

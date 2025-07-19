@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  ota_server:
+    build: ./ota_server
+    container_name: ota_server
+    ports:
+      - "8080:8080"
+    networks:
+      - ota_net
+
+  ecu_device:
+    build: ./ecu_device
+    container_name: ecu_device
+    depends_on:
+      - ota_server
+    networks:
+      - ota_net
+    volumes:
+      - ./ecu_device/received:/app/received
+
+networks:
+  ota_net:
