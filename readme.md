@@ -1,4 +1,4 @@
-# 🚗 Mini OTA Simulation (C++ + Python + Docker)
+# 🚗 Mini OTA Simulation (C++ , Python , Docker)
 
 This project demonstrates a simple **Over-the-Air (OTA)** update system using **C++**, **Python**, and **Docker**. It simulates how a server can send firmware updates to an ECU (Electronic Control Unit) in a connected vehicle environment.
 
